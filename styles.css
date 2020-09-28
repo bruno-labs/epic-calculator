@@ -1,0 +1,134 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.titulo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.container-view{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url('./cris-dinodo-background.jpg');
+    
+}
+.container{
+    padding: 5px;
+    background-color: azure;
+    display: grid;
+    gap: 5px;
+    grid-template:
+    'display display display display' 100px
+    'clear clear back dividir' 50px
+    'sete oito nove mult' 50px
+    'quatro cinco seis sub' 50px
+    'um dois tres soma' 50px
+    'zero zero virgula enter' 50px
+    / 90px 90px 90px 90px; 
+    ;
+}
+.botao{
+    display: grid;
+    font-size: 0.9rem;
+    background-color: grey;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: aquamarine;
+}
+.display{
+    grid-area: display;
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+.disp{
+    overflow: hidden;
+}
+.expressao{
+    font-size: 0.5rem;
+}
+.numero-digitado{
+    font-weight: bold;
+}
+.disp{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.clear{
+    grid-area: clear;
+}
+.back{
+    grid-area: back;
+}
+.dividir{
+    grid-area: dividir;
+}
+.mult{
+    grid-area: mult;
+}
+.soma{
+    grid-area: soma;
+}
+.sub{
+    grid-area: sub;
+}
+.enter{
+    grid-area: enter;
+}
+.virgula{
+    grid-area: virgula;
+}
+.um{
+    grid-area: um;
+}
+.dois{
+    grid-area: dois;
+}
+.tres{
+    grid-area: tres;
+}
+.quatro{
+    grid-area: quatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+.seis{
+    grid-area: seis;
+}
+.sete{
+    grid-area: sete;
+}
+.oito{
+    grid-area: oito;
+}
+.nove{
+    grid-area: nove;
+}
+.zero{
+    grid-area: zero;
+}
+#input{
+    display: none;
+}
